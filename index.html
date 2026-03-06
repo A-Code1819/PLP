@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MyProduct | Work Smarter</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<div class="logo">MyProduct</div>
+
+<nav>
+
+<a href="#features">Features</a>
+<a href="#how">How it Works</a>
+<a href="#pricing">Pricing</a>
+<a href="#testimonials">Testimonials</a>
+
+<a href="#" id="openModal" class="signup-btn">Sign Up</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Work Smarter. Not Harder.</h1>
+
+<p>
+Boost productivity and automate your workflow with one powerful platform.
+</p>
+
+<a href="#" id="openModal2" class="cta">Start Free Trial</a>
+
+</div>
+
+
+<div class="hero-graphic">
+
+<svg width="320" height="220">
+
+<rect x="40" y="120" width="70" height="40" fill="#0B6E4F"></rect>
+<rect x="140" y="80" width="70" height="80" fill="#0B6E4F"></rect>
+<rect x="240" y="140" width="70" height="40" fill="#0B6E4F"></rect>
+
+<circle cx="75" cy="120" r="6" fill="#F4B942"></circle>
+<circle cx="175" cy="80" r="6" fill="#F4B942"></circle>
+<circle cx="275" cy="140" r="6" fill="#F4B942"></circle>
+
+<line x1="75" y1="120" x2="175" y2="80" stroke="white" stroke-dasharray="4"></line>
+<line x1="175" y1="80" x2="275" y2="140" stroke="white" stroke-dasharray="4"></line>
+
+</svg>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section id="features">
+
+<h2>Features</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Automation</h3>
+<p>Automate repetitive tasks and focus on what matters most.</p>
+</div>
+
+<div class="feature">
+<h3>Analytics</h3>
+<p>Understand your performance with powerful insights.</p>
+</div>
+
+<div class="feature">
+<h3>Team Collaboration</h3>
+<p>Work together seamlessly with your team.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section id="how">
+
+<h2>How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Sign Up</h3>
+<p>Create your free account in seconds.</p>
+</div>
+
+<div class="step">
+<h3>2. Connect Tools</h3>
+<p>Integrate with the tools you already use.</p>
+</div>
+
+<div class="step">
+<h3>3. Automate Workflow</h3>
+<p>Let MyProduct handle repetitive tasks.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section id="pricing">
+
+<h2>Pricing</h2>
+
+<div class="pricing">
+
+<div class="plan">
+
+<h3>Starter</h3>
+
+<p class="price">$9 / mo</p>
+
+<p>Basic automation tools</p>
+
+</div>
+
+<div class="plan">
+
+<h3>Pro</h3>
+
+<p class="price">$29 / mo</p>
+
+<p>Advanced analytics & automation</p>
+
+</div>
+
+<div class="plan">
+
+<h3>Enterprise</h3>
+
+<p class="price">$99 / mo</p>
+
+<p>Full platform & priority support</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials">
+
+<h2>What Our Users Say</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+
+<p>
+"This tool completely changed the way our team works."
+</p>
+
+<strong>- Sarah M.</strong>
+
+</div>
+
+
+<div class="testimonial">
+
+<p>
+"Simple, powerful, and incredibly efficient."
+</p>
+
+<strong>- David K.</strong>
+
+</div>
+
+
+<div class="testimonial">
+
+<p>
+"Our productivity increased by 40%."
+</p>
+
+<strong>- Alex T.</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 MyProduct | All rights reserved</p>
+
+</footer>
+
+
+<!-- SIGNUP MODAL -->
+
+<div class="modal" id="authModal">
+
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<h2>Create Account</h2>
+
+<form action="https://formspree.io/f/xgedeoel" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<button type="submit">Sign Up</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<!-- SCRIPT -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const modal = document.getElementById("authModal");
+
+const openBtn = document.getElementById("openModal");
+
+const openBtn2 = document.getElementById("openModal2");
+
+const closeBtn = document.querySelector(".close");
+
+
+openBtn.onclick = () => modal.style.display = "flex";
+
+openBtn2.onclick = () => modal.style.display = "flex";
+
+closeBtn.onclick = () => modal.style.display = "none";
+
+
+window.onclick = function(e){
+
+if(e.target === modal){
+
+modal.style.display = "none";
+
+}
+
+};
+
+});
+
+</script>
+
+
+</body>
+</html>
